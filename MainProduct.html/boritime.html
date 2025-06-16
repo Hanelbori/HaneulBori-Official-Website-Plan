@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>하늘보리 보리타임</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9F3E5;
+            }
+        header {
+            position: fixed;
+            top: 0;
+            width: 1920px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+            }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4A3600;
+            position: relative;
+            left: 7%;
+            }
+        nav{
+            position: relative;
+            right: 10%;
+        }
+        nav a {
+            margin-left: 90px;
+            text-decoration: none;
+            color: #4A3600;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #87CEEB; 
+            }
+
+/* ------------------------------------------------------------------------------ */
+    footer {
+        background-color: #f5f5f5;
+        padding: 40px 20px; 
+        font-size: 14px;
+        color: #333;
+        border-top: 1px solid #ccc;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin: 0;
+    }
+
+    .footer-logo {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .footer-section > img{
+        scale: 2;
+    }
+    .footer-section h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #000;
+    }
+
+    .sns-icons i {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+        text-decoration: none;
+        color: #666;
+        font-size: 2em;
+    }
+
+    .sns-icons .a:hover {
+        color: #e30eff;
+        cursor: pointer;
+    }
+    .sns-icons .b:hover {
+        color: #006eff;
+        cursor: pointer;
+    }
+    .sns-icons .c:hover {
+        color: #ff0000;
+        cursor: pointer;
+    }
+    footer  .inquiry{
+        padding: 10px 20px;
+        background-color: #00b7ff;
+        color: white;
+        height: fit-content;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    footer  .inquiry:hover{
+        background-color: #ff9900;
+    }
+
+
+
+/* ------------------------------------------------------------------------ */
+    .spacer{
+        height: 80px;
+    }
+    .wrap{
+        width: 1440px;
+        margin: 0 auto;
+        height: 193vh;
+        background-color: #F9F3E5;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .wrap > h1{
+        padding: 10px 10px 10px 20px;
+        background-color: #2dc3ff;
+    }
+    .wrap > .line{
+        height: 5px;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+    .wrap > .container{
+        width: 100%;
+        height: 180vh;
+        border: 5px solid #000;
+        display: flex;
+        flex-wrap:wrap ;
+        position: relative;
+    }
+    .wrap img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .wrap > .container > .bigbox{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .wrap > .container  h1{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #2dc3ff;
+        text-shadow: #006eff 1px 1px 1px;
+    }
+    .wrap > .container > .bigbox > .l{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .wrap > .container > .bigbox >.l >.box {
+        position: relative;
+    }
+    .wrap > .container > .bigbox >.l >.box > img{
+        width: 400px;
+        height: 400px;
+        border-radius: 40px;
+        object-fit: cover;
+        border: 5px solid #00b7ff;
+        
+    }
+    .wrap > .container > .bigbox >.l >.box > a{
+        opacity: 0;
+        font-size: 8em;
+        color: #ff00c8;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        transition: 0.7s;
+        width: 100%;
+        height: 100%;
+    }
+    .wrap > .container > .bigbox >.l >.box > a i{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+    .wrap > .container > .bigbox >.l >.box:hover > a{
+        opacity: 1;
+    }
+    .wrap > .container > .bigbox > .l >.box > .gray{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 0.7s;
+        top: 0;
+        left: 0;
+        border-radius: 40px;
+    }
+    .wrap > .container > .bigbox >.l >.box:hover > .gray{
+        background-color: #77777750;
+    }
+
+    .button{
+        width: fit-content;
+        position: absolute;
+        transform: translate(-50%,-50%) ;
+        left: 82%;
+        top: 95%;
+        color: white;
+        background-color: #2dc3ff;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .button:hover{
+        cursor: pointer;
+        border: 3px solid #000;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="img/logo.png" alt="하늘보리 로고" style="height: 30px; margin-right: 10px;">
+                <span style="font-size: 1.5rem; font-weight: bold; color: #4A3600;">하늘보리</span>
+            </a>
+        </div>
+        <nav>
+            <a href="detailbori.html">하늘보리 설명</a>
+            <a href="brandstory.html">브랜드스토리</a>
+            <a href="event.html">이벤트</a>
+            <a href="boritime.html">보리타임</a>
+            <a href="reveiw.html">후기</a>
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div class="wrap">
+        <h1>보리타임</h1>
+        <div class="line"></div>
+        <div class="container">
+            <div class="bigbox">
+
+                <h1>당신의 일상 속, 하늘보리와 함께한 순간을 보리타임에 공유 해주세요!</h1>
+                <div class="line01 l">
+                    <div class="box">
+                        <img src="img/boritime01.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/DI72IMWzq_g/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                    <div class="box ">
+                        <img src="img/boritime02.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/DIxAsMyBQVZ/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                </div>
+                <div class="line02 l">
+                    <div class="box">
+                        <img src="img/boritime03.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/DJ68bfDzw-r/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                    <div class="box">
+                        <img src="img/boritime04.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/DIfzryvyTMj/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                </div>
+                <div class="line03 l">
+                    <div class="box">
+                        <img src="img/boritime05.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/DIyDX7YyNlZ/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                    <div class="box">
+                        <img src="img/boritime06.png" alt="">
+                        <div class="gray"></div>
+                        <a href="https://www.instagram.com/p/CrTFgw3vc3k/"><i class="fa-brands fa-square-instagram a"></i></a>
+                    </div>
+                </div>
+                <div class="button">공유하기</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+            <img src="img/logo.png" alt="웅진 로고" class="footer-logo" >
+            <p>본사주소 · 서울시 중구 퇴계로 100 스테이트타워남산 3층<br>
+            Copyright 2014 WOONGJIN FOODS CO., LTD All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-section">
+            <h4>전화번호</h4>
+            <p><strong>대표번호</strong> 02-3668-9114</p>
+            <p><strong>고객센터</strong> 080-766-6543</p>
+            </div>
+
+            <div class="footer-section">
+            <h4>SNS 채널</h4>
+            <div class="sns-icons">
+                <a href="https://www.instagram.com/woongjinfood/"><i class="fa-brands fa-square-instagram a"></i></a>
+                <a href="https://www.facebook.com/wjfood/?locale=ko_KR"><i class="fa-brands fa-facebook b"></i></a>
+                <a href="https://www.youtube.com/channel/UC2MDDm1uX_6je0xnPTgddbw"><i class="fa-brands fa-youtube c"></i></a>
+            </div>
+            </div>
+            <a href="inquiry.html" class="inquiry">문의하기</a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
+
