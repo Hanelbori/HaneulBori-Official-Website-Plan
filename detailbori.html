@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>하늘보리 설명</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9F3E5;
+            }
+        header {
+            position: fixed;
+            top: 0;
+            width: 1920px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+            }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4A3600;
+            position: relative;
+            left: 7%;
+            }
+        nav{
+            position: relative;
+            right: 10%;
+        }
+        nav a {
+            margin-left: 90px;
+            text-decoration: none;
+            color: #4A3600;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #87CEEB; 
+            }
+
+/* ------------------------------------------------------------------------------ */
+    footer {
+        background-color: #f5f5f5;
+        padding: 40px 20px; 
+        font-size: 14px;
+        color: #333;
+        border-top: 1px solid #ccc;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin: 0;
+    }
+
+    .footer-logo {
+        height: 15px;
+        margin-bottom: 10px;
+    }
+    .footer-section > img{
+        scale: 2;
+    }
+    .footer-section h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #000;
+    }
+
+    .sns-icons i {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+        text-decoration: none;
+        color: #666;
+        font-size: 2em;
+    }
+
+    .sns-icons .a:hover {
+        color: #e30eff;
+        cursor: pointer;
+    }
+    .sns-icons .b:hover {
+        color: #006eff;
+        cursor: pointer;
+    }
+    .sns-icons .c:hover {
+        color: #ff0000;
+        cursor: pointer;
+    }
+    footer  .inquiry{
+        padding: 10px 20px;
+        background-color: #00b7ff;
+        color: white;
+        height: fit-content;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    footer  .inquiry:hover{
+        background-color: #ff9900;
+    }
+
+
+
+/* ------------------------------------------------------------------------ */
+    .spacer{
+        height: 80px;
+    }
+    .wrap{
+        width: 1440px;
+        margin: 0 auto;
+        height: 133vh;
+        background-color: #F9F3E5;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .wrap > h1{
+        padding: 10px 10px 10px 20px;
+        background-color: #2dc3ff;
+    }
+    .wrap > .line{
+        height: 5px;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+    .wrap > .container{
+        width: 100%;
+        height: 120vh;
+        border: 5px solid #000;
+        align-content: center;
+    }
+    .wrap > .container > .box{
+        width: 70%;
+        height: 300px;
+        border: 5px solid #000;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrap > .container  img{
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .wrap > .container  .textbox{
+        width: 60%;
+        align-content: center;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .wrap > .container  .b{
+        background-color: #2dc3ff90;
+    }
+    .wrap > .container  .c{
+        background-color: #ffaf1a90;
+    }
+    .wrap .textbox h1{
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="img/logo.png" alt="하늘보리 로고" style="height: 30px; margin-right: 10px;">
+                <span style="font-size: 1.5rem; font-weight: bold; color: #4A3600;">하늘보리</span>
+            </a>
+        </div>
+        <nav>
+            <a href="detailbori.html">하늘보리 설명</a>
+            <a href="brandstory.html">브랜드스토리</a>
+            <a href="event.html">이벤트</a>
+            <a href="boritime.html">보리타임</a>
+            <a href="reveiw.html">후기</a>
+        </nav>
+    </header>
+    <div class="spacer"></div>
+    <div class="wrap">
+        <h1>하늘보리 설명</h1>
+        <div class="line"></div>
+        <div class="container">
+            <div class="box">
+                <img src="img/wheat.jpg" alt="">
+                <div class="textbox a">
+                    <h1>100% 국산 보리</h1>
+                    <h3>우리땅에서 자란 100% 국산 곡물로 만들어 <br>더욱 깨끗하고 순수한 차 음료입니다.</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="textbox b">
+                    <h1>생활속 갈증해소</h1>
+                    <h3>냉성곡물 '보리'를 사용해 몸 속 갈증까지<br>시원하게 해소해주는 생활 속 갈증해소 음료입니다.</h3>
+                </div>
+                <img src="img/boriad.png" alt="">
+            </div>
+            <div class="box">
+                <img src="img/boriphoto.png" alt="">
+                <div class="textbox c">
+                    <h1>깔끔하고 구수한 맛</h1>
+                    <h3>집에서 끓여 마시던 보리차의 맛 그대로,<br>깔끔하고 구수한 맛을 자랑합니다.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+            <img src="img/logo.png" alt="웅진 로고" class="footer-logo" >
+            <p>본사주소 · 서울시 중구 퇴계로 100 스테이트타워남산 3층<br>
+            Copyright 2014 WOONGJIN FOODS CO., LTD All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-section">
+            <h4>전화번호</h4>
+            <p><strong>대표번호</strong> 02-3668-9114</p>
+            <p><strong>고객센터</strong> 080-766-6543</p>
+            </div>
+
+            <div class="footer-section">
+            <h4>SNS 채널</h4>
+            <div class="sns-icons">
+                <a href="https://www.instagram.com/woongjinfood/"><i class="fa-brands fa-square-instagram a"></i></a>
+                <a href="https://www.facebook.com/wjfood/?locale=ko_KR"><i class="fa-brands fa-facebook b"></i></a>
+                <a href="https://www.youtube.com/channel/UC2MDDm1uX_6je0xnPTgddbw"><i class="fa-brands fa-youtube c"></i></a>
+            </div>
+            </div>
+            <a href="inquiry.html" class="inquiry">문의하기</a>
+        </div>
+    </footer>
+</body>
+</html>
